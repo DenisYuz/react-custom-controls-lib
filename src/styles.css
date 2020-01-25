@@ -6,3 +6,60 @@
   border: 2px solid #000;
   font-size: 2em;
 }
+
+
+.mainButton{
+  float: left;
+  cursor: pointer;
+  padding: 12px 0;
+  width: 7rem;
+  text-align: center;
+  border-radius: 0rem 0.3rem 0.3rem 0;
+  background: #3498db;
+  border: none;
+  color: #ecf0f1;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #2980b9;
+  box-shadow: 0 3px 0 1px #222, inset 0 1px 0 #3aafff;
+  /*box-shadow: 0rem 0rem 0.5rem #aaaa00ee;*/
+  -webkit-transition: .05s linear;
+  -moz-transition: .05s linear;
+  transition: .05s linear;  
+}
+
+.composedButtonLeft {
+  width: 50rem;
+  display: flex;
+  flex-direction: row-reverse
+}
+
+.composedButtonRight {
+  width: 50rem;
+  display: flex;  
+}
+
+
+.buttonArrow {
+  cursor: pointer;
+  padding: 12px 0;
+  width: 3rem;
+  text-align: center;
+  border-radius: 0.3rem 0 0 0.3rem;
+  background: #3498db;
+  border: none;
+  color: #ecf0f1;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #2980b9;
+  box-shadow: 0 3px 0 1px #222, inset 0 1px 0 #3aafff;
+  -webkit-transition: .05s linear;
+  -moz-transition: .05s linear;
+  transition: .05s linear; 
+ }
+
+
+#button:active{
+  background: #2980b9;
+  margin-top: 2px;
+  color: #bdc3c7;
+  box-shadow: 0 0 0 1px #222, inset 0 1px 0 #3aafff;
+}

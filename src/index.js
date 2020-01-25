@@ -3,21 +3,21 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.css'
 
-export default class ToggleMenuButton extends Component {
-  static propTypes = {
-    buttonText: PropTypes.string
-  }
+const ToggleMenuButton = (props) => {
 
-  render() {
-    const {
-      buttonText
-    } = this.props
+  const {
+    buttonText
+  } = props
 
-    return (
-      <div className={styles.composedButtonLeft}>
-        <div className={styles.mainButton}>{buttonText}</div>
-        <div className={styles.buttonArrow}>&#x25C2; &#x2630;</div>
-      </div>
-    )
-  }
+  const mainButtonClasses = `${styles.mainButton} ${styles.noselect}`;
+  const menuButtonClasses = `${styles.menuButton} ${styles.noselect}`;
+
+  return (
+    <div className={styles.composedButtonLeft} >
+      <div className={mainButtonClasses}>{buttonText}</div>
+      <div className={menuButtonClasses}>&#x25C2; &#x2630;</div >
+    </div >
+  )
 }
+
+export default ToggleMenuButton;
